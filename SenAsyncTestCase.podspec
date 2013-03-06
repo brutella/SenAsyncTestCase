@@ -9,4 +9,5 @@ Pod::Spec.new do |spec|
   spec.source_files = 'SenAsyncTestCase.*'
   spec.requires_arc = false
   spec.framework    = 'SenTestingKit'
+  spec.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '$(DEVELOPER_LIBRARY_DIR)/Frameworks'}
 end
